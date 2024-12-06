@@ -95,4 +95,4 @@ def jeu_bataille_navale():
                 print("Le maître du jeu a gagné.")
                 return False
         joueur = suiv(joueur)  # Passer au joueur suivant
-print(jeu_bataille_navale())
+#print(jeu_bataille_navale())
