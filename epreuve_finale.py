@@ -51,4 +51,4 @@ def salle_De_Tresor():
     else:
         print("Dommage ! Vous n'avez pas réussi à ouvrir la salle du trésor.")
 
-salle_De_Tresor()
+#salle_De_Tresor()
