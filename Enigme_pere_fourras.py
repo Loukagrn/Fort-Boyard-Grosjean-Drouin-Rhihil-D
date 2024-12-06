@@ -34,4 +34,5 @@ def enigme_pere_fourras():
             else:
                 print(f" Vous avez échoué. La bonne réponse était : {reponse_correcte}.")
                 return False
-print(enigme_pere_fourras())
+
+#enigme_pere_fourras()
