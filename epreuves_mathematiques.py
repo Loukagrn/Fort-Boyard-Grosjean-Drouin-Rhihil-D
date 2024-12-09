@@ -23,6 +23,8 @@ def epreuve_math_factorielle():
         except ValueError:
             print("Veuillez entrer un nombre entier valide.")
 
+
+
 def epreuve_roulette_mathematique():
     nombres = [random.randint(1, 20) for _ in range(5)]
     operation = random.choice(['addition', 'soustraction', 'multiplication'])
@@ -82,6 +84,3 @@ def epreuve_math():
     epreuves = [epreuve_math_factorielle, epreuve_roulette_mathematique, epreuve_math_premier]
     epreuve = random.choice(epreuves)
     return epreuve()
-
-if __name__ == "__main__":
-    epreuve_math()
