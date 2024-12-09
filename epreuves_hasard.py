@@ -114,5 +114,3 @@ def epreuve_hasard():
     print("\n🎲 Sélection d'une épreuve aléatoire...\n")
     epreuve()
 
-if __name__ == "__main__":
-    epreuve_hasard()
