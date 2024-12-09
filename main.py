@@ -3,6 +3,7 @@ from Enigme_pere_fourras import enigme_pere_fourras
 from fonctions_utiles import (introduction, composer_equipe, menu_epreuves, choisir_joueur, enregistrer_historique)
 from epreuve_finale import salle_De_Tresor
 from logique import jeu_bataille_navale
+from epreuves_mathematiques import epreuve_math
 
 def jeu():
     introduction()
@@ -21,13 +22,13 @@ def jeu():
 
         if choix_epreuve == 1:  # Épreuve de Mathématiques
             epreuve = "Épreuve de Mathématiques"
-            resultat = jouer_epreuve_maths(joueur)
+            resultat = epreuve_math()
         elif choix_epreuve == 2:  # Épreuve de Logique
             epreuve = "Épreuve de Logique"
             resultat = jeu_bataille_navale()
         elif choix_epreuve == 3:  # Épreuve du Hasard
             epreuve = "Épreuve du Hasard"
-            resultat = jouer_epreuve_hasard(joueur)
+            resultat = jouer_epreuve_hasard()
         elif choix_epreuve == 4:  # Énigme du Père Fouras
             epreuve = "Énigme du Père Fouras"
             resultat =enigme_pere_fourras()
