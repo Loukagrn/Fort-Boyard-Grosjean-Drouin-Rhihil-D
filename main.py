@@ -6,6 +6,7 @@ from logique import jeu_bataille_navale
 from epreuves_mathematiques import epreuve_math
 from epreuves_hasard import epreuve_hasard
 
+
 def jeu():
     introduction()
     equipe = composer_equipe()
@@ -51,5 +52,6 @@ def jeu():
         print(f"Clés obtenues : {cles_obtenues}/{cles_totales}\n")
 
     print("Félicitations, vous avez obtenu les trois clés nécessaires pour accéder à la salle du trésor !")
+    salle_De_Tresor()
 
 jeu()
