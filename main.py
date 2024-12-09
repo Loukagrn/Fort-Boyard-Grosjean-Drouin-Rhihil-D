@@ -4,6 +4,7 @@ from fonctions_utiles import (introduction, composer_equipe, menu_epreuves, choi
 from epreuve_finale import salle_De_Tresor
 from logique import jeu_bataille_navale
 from epreuves_mathematiques import epreuve_math
+from epreuves_hasard import epreuve_hasard
 
 def jeu():
     introduction()
@@ -28,7 +29,7 @@ def jeu():
             resultat = jeu_bataille_navale()
         elif choix_epreuve == 3:  # Épreuve du Hasard
             epreuve = "Épreuve du Hasard"
-            resultat = jouer_epreuve_hasard()
+            resultat = epreuve_hasard()
         elif choix_epreuve == 4:  # Énigme du Père Fouras
             epreuve = "Énigme du Père Fouras"
             resultat =enigme_pere_fourras()
@@ -50,8 +51,5 @@ def jeu():
         print(f"Clés obtenues : {cles_obtenues}/{cles_totales}\n")
 
     print("Félicitations, vous avez obtenu les trois clés nécessaires pour accéder à la salle du trésor !")
-    print("Préparez-vous pour l'épreuve finale.")
 
-
-    print("Merci d'avoir joué à Fort Boyard !")
 jeu()

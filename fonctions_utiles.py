@@ -75,12 +75,8 @@ def choisir_joueur(equipe):
 
 
 def enregistrer_historique(joueur, epreuve, resultat):
-    """
-    Enregistre l'historique des épreuves dans un fichier texte.
-    :param joueur: Dictionnaire représentant le joueur ayant participé.
-    :param epreuve: Nom de l'épreuve.
-    :param resultat: Résultat de l'épreuve (succès/échec).
-    """
+
+    ##Enregistre l'historique des épreuves dans un fichier texte.
     historique_dir = "output"
     historique_file = os.path.join(historique_dir, "historique.txt")
 
