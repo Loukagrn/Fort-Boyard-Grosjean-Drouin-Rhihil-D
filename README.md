@@ -1,8 +1,8 @@
 Fort-Boyard Projet
 Contiibuteur:
--Louka Grosjean
--Saad Rhihil
--Olivier Drouin
+-Louka Grosjean; fcts principales/ mise en forme 
+-Saad Rhihil; fct secondaire
+-Olivier Drouin; fct secondaire
 
 Ce projet simule une partie du jeu 'Fort_Boyard', trois clés sont attendues pour accéder à la salle finale et réussir le jeu, les types d'épreuves sont des énigmes, de l'aléatoire/hasard, de mathématiques et de logique.
 
