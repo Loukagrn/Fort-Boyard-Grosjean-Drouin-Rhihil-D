@@ -80,7 +80,7 @@ def jeu_bataille_navale():
     grille_tirs_joueur = grille_vide()
     grille_tirs_maitre = grille_vide()
 
-    joueur = 0  # Le joueur humain commence
+    joueur = 0  # Le joueur commence
     while True:
         if joueur == 0:
             print("C'est votre tour !")

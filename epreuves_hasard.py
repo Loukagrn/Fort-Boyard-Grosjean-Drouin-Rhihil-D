@@ -60,7 +60,5 @@ def jeu_lance_des():
 
 def epreuve_hasard():
     epreuves = [bonneteau, jeu_lance_des]
-
-    # Sélection aléatoire d'une épreuve
     epreuve = random.choice(epreuves)
     return epreuve()

@@ -21,7 +21,6 @@ def jeu():
 
         # Sélectionner un joueur
         joueur = choisir_joueur(equipe)
-
         if choix_epreuve == 1:  # Épreuve de Mathématiques
             epreuve = "Épreuve de Mathématiques"
             resultat = epreuve_math()
