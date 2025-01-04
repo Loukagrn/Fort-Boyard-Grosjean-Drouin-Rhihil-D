@@ -7,12 +7,12 @@ def charger_enigme(fichier): ##charger le fichier demandé
             enigmes=json.load(f)
         return enigmes
     except FileNotFoundError:
-        print(f"Le fichier {fichier} est introuvable")
+        print(f"Le fichier {fichier} est introuvable") #test si fichier est introuvable
         return []
 
 def enigme_pere_fourras():
     enigmes=charger_enigme('enigmesPF.json')
-    if not enigmes:
+    if not enigmes: #test si fichier est introuvable
         print("impossible sans énigmes ")
         return False
     enigmes=random.choice(enigmes)

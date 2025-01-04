@@ -43,8 +43,8 @@ def init():
     return grille
 
 def tour(joueur,grille_tir_joueur,grille_adversaire):
-    if joueur==0: ##joueur reel
-        affiche_grille(grille_tir_joueur,"Rappel de l'historique des tirs que vous avez éffectués:")
+    if joueur==0:
+        affiche_grille(grille_tir_joueur,"Rappel de l'historique des tirs que vous avez effectués :")
         print("Entrez la position (ligne,colonne) entre 0 et 2 pour tirer:")
         ligne, colonne = demande_position()
     else: ##maitre du jeu #bot
@@ -54,20 +54,17 @@ def tour(joueur,grille_tir_joueur,grille_adversaire):
     if grille_adversaire[ligne][colonne]=="B":
         print("Touché coulé")
         grille_tir_joueur[ligne][colonne]="x"
-        grille_tir_joueur[ligne][colonne]="x"
     else:
         print("Dans l'eau...")
         grille_tir_joueur[ligne][colonne] = "."
 
 def gagne(grille_tirs_joueur):
-    return sum(row.count("x") for row in grille_tirs_joueur) == 2
+    return sum(lign.count("x") for lign in grille_tirs_joueur) == 2
 
 def jeu_bataille_navale():
-    print("Bienvenue dans le jeu de bataille navale simplifié !")
     print("Chaque joueur doit placer 2 bateaux sur une grille 3x3.")
     print("Les bateaux sont représentés par 'B' et les tirs manqués par '.'. Les bateaux coulés sont marqués par 'x'.")
 
-    # Initialisation des grilles
     grille_joueur = init()
     grille_maitre = grille_vide()
     for _ in range(2):

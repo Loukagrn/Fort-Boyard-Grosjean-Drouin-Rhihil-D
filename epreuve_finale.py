@@ -6,10 +6,10 @@ def salle_De_Tresor():
         with open('indicesSalle.json', 'r', encoding='utf-8') as fichier:
             jeu_tv = json.load(fichier)["Fort Boyard"]
     except FileNotFoundError:
-        print("Erreur : fichier 'indicesSalles.json' introuvable.")
+        print("Erreur : fichier 'indicesSalles.json' introuvable.") # si fichier est introuvable
         return
     except json.JSONDecodeError:
-        print("Erreur : fichier 'indicesSalles.json' invalide.")
+        print("Erreur : fichier 'indicesSalles.json' invalide.") #si le format du fichier est pas  le bon
         return
 
     annees = list(jeu_tv.keys())

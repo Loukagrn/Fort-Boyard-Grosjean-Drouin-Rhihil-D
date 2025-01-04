@@ -1,4 +1,4 @@
-import os
+import os #pour historique
 
 def introduction():
     print("=" * 50)
@@ -68,12 +68,12 @@ def choisir_joueur(equipe):
             choix = int(input("Entrez le numéro du joueur : "))
             if 1 <= choix <= len(equipe):
                 return equipe[choix - 1]
-            print("Erreur : Numéro invalide.")
+            print("Erreur : Numéro invalide.") #verif nb valide
         except ValueError:
-            print("Veuillez entrer un numéro valide.")
+            print("Veuillez entrer un numéro valide.") #verif c'est un nb
 
 
-def enregistrer_historique(joueur, epreuve, resultat):
+def enregistrer_historique(joueur, epreuve, resultat):##utilisation de os interdite/ pas d'idées d'autre solutions
 
     ##création de historique
     historique_dir = "historique"

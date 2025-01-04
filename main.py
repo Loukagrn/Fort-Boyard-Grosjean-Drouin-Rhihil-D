@@ -14,12 +14,12 @@ def jeu():
     cles_totales = 3
     cles_obtenues = 0
 
-    print("\nLe jeu commence maintenant !")
+    print("\nLe jeu commence!")
     print(f"Vous devez obtenir {cles_totales} clés pour accéder à la salle du trésor.\n")
     while cles_obtenues < cles_totales:
         choix_epreuve = menu_epreuves()
 
-        # Sélectionner un joueur
+        # Sélection du joueur
         joueur = choisir_joueur(equipe)
         if choix_epreuve == 1:  # Épreuve de Mathématiques
             epreuve = "Épreuve de Mathématiques"
