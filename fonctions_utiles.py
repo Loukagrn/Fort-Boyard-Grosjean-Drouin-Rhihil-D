@@ -73,7 +73,7 @@ def choisir_joueur(equipe):
             print("Veuillez entrer un numéro valide.") #verif c'est un nb
 
 
-def enregistrer_historique(joueur, epreuve, resultat):##utilisation de os interdite/ pas d'idées d'autre solutions
+def enregistrer_historique(joueur, epreuve, resultat):##utilisation de os interdite/ pas d'idées d'autre solutions#try exept avec with open
 
     ##création de historique
     historique_dir = "historique"

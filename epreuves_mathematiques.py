@@ -8,20 +8,20 @@ def factorielle(n):
     for i in range(1,n+1):
         resultat *= i
     return resultat
-    def epreuve_math_factorielle():
-        n = random.randint(1, 10)
-        print(f"Épreuve de Mathématiques: Calculer la factorielle de {n}.")
-        resultat_attendu = factorielle(n)
-        while True :
-            try:
-                reponse = int(input("Votre réponse: "))
-                if reponse == resultat_attendu :
-                    print("Correct! Vous gagnez une clé.")
-                    return True
-                else:
-                    print(f"Faux! Veuillez réessayer.")
-            except ValueError:
-                print("Veuillez entrer un nombre entier valide.")
+def epreuve_math_factorielle():
+    n = random.randint(1, 10)
+    print(f"Épreuve de Mathématiques: Calculer la factorielle de {n}.")
+    resultat_attendu = factorielle(n)
+    while True :
+        try:
+            reponse = int(input("Votre réponse: "))
+            if reponse == resultat_attendu :
+                print("Correct! Vous gagnez une clé.")
+                return True
+            else:
+                print(f"Faux! Veuillez réessayer.")
+        except ValueError:
+            print("Veuillez entrer un nombre entier valide.")
 
 
 

@@ -13,7 +13,7 @@ def affiche_grille(grille, message):
 
 def demande_position():
     while True:
-        pos = input("Entrez la position (ligne,colonne) entre 0 et 2 : ") ##changer de 0 et 2 a 1 et 3
+        pos = input("Entrez la position (ligne,colonne) entre 0 et 2 : ")
         if ',' in pos:  # Vérifie si la virgule est présente
             parts = pos.split(',')
             if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
